@@ -6,20 +6,42 @@
 ## Estado del repositorio
 `git status`
 
-## Agregar modificaciones al proximo commit
-`git add .`
+- Existen 2 tipos de estados
+    * unstaged `Archivo modificado (rojo)`
+    * staged `Archivo listo para un proximo commit (verde)`
 
-## Realizar cambios con un comentario Vim
-`git commit`
 
-## Realizar cambios con un comentario directo
-`git commit -a 'Comentario del commit'`
 
-## Mostrar historial de cambios
+## Mover archivos de unstaged a staged
+- Archivo individual
+    * `git add fileName`
+- Todos los archivos de la ruta actual
+    * `git add .`
+
+## Realizar cambios staged al repositorio con un comentario Vim
+- Con comentario Vim
+    * `git commit`
+
+- Con comentario comentario directo
+    * `git commit -a 'Comentario del commit'`
+
+## Mostrar historial de cambios en el repositorio
 `git log`
 
-## Mostrar que es lo que se ha editado y no se han realizado los cambios en git
+## Mostrar que es lo que se ha editado en archivos unstaged y staged
 `git diff`
 
-## Ver mensaje del commit anterior con Vim
+## Actualizar mensaje del commit anterior con Vim (Esto actualiza el id del commit)
 `git commit --ament`
+
+## Desacer cambios de un archivo en estado modificado `Se perderan los cambios que no tengan commit`
+- Archivo individual
+    * `git checkout fileName`
+- Todos los archivos de la ruta actual
+    * `git checkout .`
+
+## Mover archivos de staged a unstaged
+- Archivo individual
+    * `git restore --staged fileName`
+- Todos los archivos de la ruta actual
+    * `git restore --staged .`
