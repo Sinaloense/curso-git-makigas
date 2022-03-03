@@ -79,3 +79,9 @@
 - Revertir commit sin hacer commit, dejando los cambios en staged `(Sirve para revertir mas de 1 commit)`
     * `git revert --no-commit iD`
     * Terminar y hacer el commit: `git revert --continue`
+
+## Combinar ramas
+- Dirigirnos a la rama de destino
+* `git checkout master`
+- Combiar rama de destino con la rama de origen
+* `git merge development`
