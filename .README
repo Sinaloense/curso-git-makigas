@@ -54,11 +54,11 @@
 
 ## Uso de HEAD
 - Obtener iD actual
-`HEAD`
+    * `HEAD`
 - Obtener iD antes del actual
-`HEAD~1`
+    * `HEAD~1`
 - Obtener iD 2 antes del actual
-`HEAD~2`
+    * `HEAD~2`
 
 ## Eliminar commits que estan arriba del commit indicado `(Comando destructivo)`
 - Eliminar commits y mantener cambios en unstaged
@@ -74,3 +74,17 @@
 - Revertir commit sin hacer commit, dejando los cambios en staged `(Sirve para revertir mas de 1 commit)`
     * `git revert --no-commit iD`
     * Terminar y hacer el commit: `git revert --continue`
+
+## Ramas
+- Ver lista de ramas
+    * `HEAD`
+- Crear rama
+    * `git branch branchName`
+- Cambiar de rama
+    * `git checkout branchName`
+- Crear rama y cambiarnos a ella
+    * `git checkout -b branchName`
+- Cambiar nombre de una rama
+    * `git branch -m branchNameOld branchNameNew`
+- Eliminar rama `(Primero es necesario cambiarse a una rama que no sera eliminada)`
+    * `git branch -d branchName`
