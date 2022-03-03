@@ -30,6 +30,11 @@
     * `git log`
 - Una linea
     * `git log --oneline`
+- Mostrar todas las branch
+    * `git log --oneline --all`
+
+- Mostrar todas las branch con indicadores
+    * `git log --oneline --all --graph`
 
 ## Mostrar que es lo que se ha editado
 - Archivos unstaged y staged
@@ -88,3 +93,9 @@
     * `git branch -m branchNameOld branchNameNew`
 - Eliminar rama `(Primero es necesario cambiarse a una rama que no sera eliminada)`
     * `git branch -d branchName`
+    
+## Combinar ramas
+- Dirigirnos a la rama de destino
+* `git checkout master`
+- Combiar rama de destino con la rama de origen
+* `git merge development`
