@@ -9,7 +9,7 @@
 ## Agregar modificaciones al proximo commit
 `git add .`
 
-## Realizar cambios con un comentario vim
+## Realizar cambios con un comentario Vim
 `git commit`
 
 ## Realizar cambios con un comentario directo
@@ -20,3 +20,6 @@
 
 ## Mostrar que es lo que se ha editado y no se han realizado los cambios en git
 `git diff`
+
+## Ver mensaje del commit anterior con Vim
+`git commit --ament`
