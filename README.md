@@ -157,3 +157,15 @@ git config --global user.email 'juanperez@example.com'
 ### Pull
 - Bajar cambios del repositorio
 * `git pull origin master`
+- Bajar cambios del repositorio y hacer un merge sin necesidad de un commit
+* `git pull --rebase origin master`
+
+### Combinar ramas con Rebase y hacer merge limpio `(Comando destructivo)`
+- Dirigirnos a la rama de origen
+* `git checkout development`
+- Combinar commits de forma restructurada para que vayan en orden `(Comando destructivo)`
+* `git rebase master`
+- Dirigirnos a la rama de destino
+* `git checkout master`
+- Combiar rama de destino con la rama de origen
+* `git merge development`
