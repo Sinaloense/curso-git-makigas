@@ -99,3 +99,45 @@
 * `git checkout master`
 - Combiar rama de destino con la rama de origen
 * `git merge development`
+
+## Tags
+- Agregar tag a commit actual
+* `git tag v0.2.0`
+- Agregar tag a commit indicado con id
+* `git tag v0.1.0 iD`
+- Agregar tag con mensaje a commit indicado con id
+* `git tag -a v0.1.0 iD`
+- Eliminar tag
+* `git tag -d v0.1.0`
+- Mostrar tags
+* `git tag`
+- Mostrar tags con filtro
+* `git tag -l 'v0.*.0'`
+- Mostrar informacion de tag
+* `git show v0.1.0`
+
+## Stash `(Almacenar cambios localmente sin hacer commit para poder cambiarse de rama)`
+- Almacenar cambios en stash
+* `git stash`
+- Almacenar cambios en stash con mensaje personalizado
+* `git stash save 'Modificación en rama master'`
+- Ver lista de stash actuales
+* `git stash list`
+- Aplicar stash
+* `git stash apply iD`
+- Eliminar stash
+* `git stash drop iD`
+- Aplicar stash y eliminar stash
+* `git stash pop iD`
+
+## Remote
+- Agregar remoto
+* `git remote add origin https://github.com/Sinaloense/curso-git-makigas.git`
+- Ver remotos
+* `git remote`
+- Ver remotos y su URL
+* `git remote -v`
+- Subir repositorio (nombre de remoto y nombre de rama)
+* `git push origin master`
+- Subir repositorio a todos los remotos agregados
+* `git push origin --all`
