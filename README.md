@@ -143,7 +143,17 @@ git config --global user.email 'juanperez@example.com'
 * `git remote`
 - Ver remotos y su URL
 * `git remote -v`
+
+### Push
 - Subir repositorio (nombre de remoto y nombre de rama)
 * `git push origin master`
 - Subir repositorio a todos los remotos agregados
 * `git push origin --all`
+
+### Clone
+- Clonar repositorio
+* `git clone https://github.com/user/repo.git`
+
+### Pull
+- Bajar cambios del repositorio
+* `git pull origin master`
