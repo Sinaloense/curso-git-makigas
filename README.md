@@ -3,6 +3,13 @@
 ## Crear nuevo repositorio dentro de la carpeta actual
 `git init`
 
+## Agregar nombre de usuario, email y contraseña
+```
+git config --global user.name 'Juan Pérez'
+git config --global user.email 'juanperez@example.com'
+git config --global user.password 'xxxxxxxxxx'
+```
+
 ## Estado del repositorio
 `git status`
 
