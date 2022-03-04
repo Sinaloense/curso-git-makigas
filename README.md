@@ -138,7 +138,7 @@ git config --global user.email 'juanperez@example.com'
 
 ## Remote
 - Agregar remoto
-* `git remote add origin https://github.com/Sinaloense/curso-git-makigas.git`
+* `git remote add origin https://github.com/user/repo.git`
 - Ver remotos
 * `git remote`
 - Ver remotos y su URL
