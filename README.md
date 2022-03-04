@@ -160,7 +160,9 @@ git config --global user.email 'juanperez@example.com'
 - Bajar cambios del repositorio y hacer un merge sin necesidad de un commit
 * `git pull --rebase origin master`
 
-### Combinar ramas con Rebase y hacer merge limpio `(Comando destructivo)`
+## Rebase `(Comando destructivo | Puede ser util localmente, pero no en repositorios de origin)`
+
+### Combinar ramas con Rebase y hacer merge limpio
 - Dirigirnos a la rama de origen
 * `git checkout development`
 - Combinar commits de forma restructurada para que vayan en orden `(Comando destructivo)`
@@ -169,3 +171,7 @@ git config --global user.email 'juanperez@example.com'
 * `git checkout master`
 - Combiar rama de destino con la rama de origen
 * `git merge development`
+
+### Rebase interactivo `(Comando destructivo)`
+- Seleccionar un commit y tomarlo en cuenta junto con los mas recientes, git desplegara una lista de comandos, solo hay que aplicar el que queramos y en el orden que queramos, finalmente es necesario hacer un commit
+* `git rebase -i HEAD~4`
