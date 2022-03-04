@@ -7,7 +7,6 @@
 ```
 git config --global user.name 'Juan Pérez'
 git config --global user.email 'juanperez@example.com'
-git config --global user.password 'xxxxxxxxxx'
 ```
 
 ## Estado del repositorio
