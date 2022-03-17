@@ -78,6 +78,8 @@ git config --global user.email 'juanperez@example.com'
     * `git reset iD`
 - Eliminar commits y no mantener cambios
     * `git reset --hard iD`
+- Subir cambios
+    * `git push -f origin master`
 
 ## Revertir o desacer commit
 - Revertir commit creando un commit que revierta los cambios
