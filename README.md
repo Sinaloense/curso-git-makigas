@@ -125,6 +125,8 @@ git config --global user.email 'juanperez@example.com'
 * `git show v0.1.0`
 - Subir tag
 * `git push origin 'v0.1.0'`
+- Eliminar tag subido a origin
+* `git push --delete origin 'v0.1.0'`
 
 ## Stash `(Almacenar cambios localmente sin hacer commit para poder cambiarse de rama)`
 - Almacenar cambios en stash
